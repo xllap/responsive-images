@@ -1,0 +1,14 @@
+<Window x:Class="MonitorAudioManager.ConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings" Height="300" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Choose monitor name"/>
+            <TextBox x:Name="MonitorNameBox"/>
+            <TextBlock Text="Default audio device" Margin="0,10,0,0"/>
+            <ComboBox x:Name="AudioDevicesBox"/>
+            <Button Content="Save" Margin="0,10,0,0" Click="OnSave" Width="80" HorizontalAlignment="Left"/>
+        </StackPanel>
+    </Grid>
+</Window>
